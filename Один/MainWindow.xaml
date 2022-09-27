@@ -7,9 +7,21 @@
         mc:Ignorable="d"
         Title="Практическая работа №1 - Разработка и оформление алгоритма циклической структуры" Height="450" Width="800" Background="#FFFFF08C" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBox x:Name="result" Width="300" Height="380" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20, 0, 0, 0" BorderThickness="0" IsReadOnly="True"></TextBox>
-        
-        <TextBox x:Name="k" Width="150" Height="20" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="80, 50, 0, 0"/>
+        <TextBox x:Name="result" Width="300" Height="380" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20, 0, 0, 0" BorderThickness="0" IsReadOnly="True">
+            <TextBox.Resources> 
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+
+        <TextBox x:Name="k" Width="150" Height="20" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="80, 50, 0, 0">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
         <Label x:Name="___Без_имени_" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="80, 20, 0, 0">Введите верхний предел суммы</Label>
 
         <Button x:Name="btn_Count" IsDefault="True" Height="25" Width="150" Content="Рассчитать" Background="#FFFFD04F" BorderThickness="0" BorderBrush="White" Foreground="#FF0B5F10"
