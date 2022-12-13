@@ -15,7 +15,7 @@
             </TextBox.Resources>
         </TextBox>
 
-        <TextBox x:Name="k" Width="150" Height="20" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="80, 50, 0, 0">
+        <TextBox x:Name="k" Width="150" MaxLength="6" Height="20" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="80, 50, 0, 0">
             <TextBox.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
